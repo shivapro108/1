@@ -1,0 +1,17 @@
+git add .
+git commit -m "Initial commit of ShivaPro"
+git push origin main
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+fetch('https://your-api-endpoint.com/generate', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    text: scriptInput.value,
+    language: selectedLanguage.value,
+    quality: selectedQuality.value,
+    type: outputType.value
+  })
+})
